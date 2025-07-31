@@ -78,7 +78,7 @@ function ProductSection() {
                 ให้เปลี่ยน Style ของปุ่ม “Add to Card” แก้ไข className ใน Component `Button` ที่สร้างขึ้นมา
                 จาก “add-to-cart-button” เป็น “add-to-cart-button-secondary”
               */}
-            <button className="add-to-cart-button">Add to Cart</button>
+            <Button />
           </div>
           <div className="product-card">
             <img
@@ -88,7 +88,7 @@ function ProductSection() {
             <h3>Classic Leather Watch</h3>
             <p className="product-price">4,000 Baht</p>
             {/* Todo 5: (จุดที่ 2) */}
-            <button className="add-to-cart-button">Add to Cart</button>
+            <Button />
           </div>
           <div className="product-card">
             <img
@@ -98,7 +98,7 @@ function ProductSection() {
             <h3>Organic Green Tea</h3>
             <p className="product-price">79.99 Baht</p>
             {/* Todo 5: (จุดที่ 3) */}
-            <button className="add-to-cart-button">Add to Cart</button>
+            <Button />
           </div>
         </div>
       </div>
@@ -110,6 +110,11 @@ function Footer() {
     <footer>
       <p>&copy; 2023 Your Ecommerce Store. All rights reserved.</p>
     </footer>
+  )
+}
+function Button(){
+  return (
+    <button className="add-to-cart-button-secondary">Add to Cart</button>
   )
 }
 
